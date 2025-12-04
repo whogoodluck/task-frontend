@@ -25,7 +25,7 @@ export const getTasks = async ({ status }: GetTasks) => {
   return response.data
 }
 
-export const getTask = async (id: number) => {
+export const getTask = async (id: string) => {
   const response = await axios.get(`${API_URL}/${id}`)
   return response.data
 }

@@ -9,7 +9,7 @@ function Logo() {
   return (
     <Link href='/'>
       <h1 className={cn('text-primary text-4xl', leckerliOne.className)}>
-        Task<span className='text-secondary'>flow</span>
+        Task<span className='text-secondary'>app</span>
       </h1>
     </Link>
   )
