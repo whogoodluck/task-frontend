@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐞 Task Management Frontend
+
+A full-featured task application built with **Next.js** for the frontend and **Node.js with Express** for the backend. This application enables users to create, view, edit, and delete tasks efficiently.
+
+---
+
+## Live Demo
+
+You can view the live version of the application at:
+
+[See Live](https://task-frontend-sand.vercel.app/)
+
+## 📌 Project Overview
+
+This Task app provides users with a robust system to manage tasks. The platform includes:
+
+- **Dashboard** with a list of all issues
+- **Detailed View** for each issue
+- Full **CRUD** functionality
+- **Sorting & Filtering** capabilities
+- Responsive and professional **UI**
+- RESTful **API** with data persistence
+
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend**: React.js, Tailwind CSS, ShadCn
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL
+- **Others**: Axios, ESLint, Prettier, dotenv
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Follow the instructions below to set up the project locally.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14.x or higher)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+#### 1. Clone the repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+git clone https://github.com/whogoodluck/task-frontend
+
+cd task-frontend
+
+npm install
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 2. Configure environment variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Create a `.env` file inside the `frontend/` folder
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Add the following:
 
-## Learn More
+  ```env
 
-To learn more about Next.js, take a look at the following resources:
+  NEXT_PUBLIC_API_URL = http://localhost:3001
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### 3. Start the frontend server
 
-## Deploy on Vercel
+```bash
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+
+The frontend will be available at `http://localhost:3000`
+
+#### 4. backend repository
+
+- [task-backend](https://github.com/whogoodluck/task-backend)
