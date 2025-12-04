@@ -1,12 +1,12 @@
 /** @type {import('prettier').Config} */
 const config = {
-  arrowParens: "avoid",
+  arrowParens: 'avoid',
   semi: false,
   singleQuote: true,
   jsxSingleQuote: true,
-  trailingComma: "es5",
+  trailingComma: 'es5',
   printWidth: 100,
-  plugins: ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
-};
+  plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-tailwindcss'],
+}
 
-export default config;
+export default config
